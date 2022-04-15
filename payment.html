@@ -1,0 +1,124 @@
+<html lang="en" class="text-xs box-border">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+    <body class=" font-[Poppins] bg-no-repeat bg-cover h-screen shadow-[0px 2px 28px rgba(0, 0, 0, 0.25)] " style="background-image: url('img/Rectangle\ 6\ \(4\).png');">
+    <!-- <body class="bg-gradient-to-r from-cyan-500 to-blue-500"> -->
+        
+    
+            
+    <div class="">
+        <nav class="p-5 bg-[#3d5a80]  md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+              <span class="text-2xl font-[Poppins] cursor-pointer">
+                <img class="h-20 inline"
+                  src="img/full-mark 1.png">
+                
+              </span>
+        
+              <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+        
+            <ul class="md:flex md:items-center bg-[#3d5a80] z-[-1] md:z-auto md:static absolute text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-cyan-500 duration-500">Home</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-cyan-500 duration-500">About Us </a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-cyan-500 duration-500">Blog</a>
+              </li>
+              <button class="bg-white text-[#3d5a80] font-[Poppins] duration-500 px-12 text-2xl py-2 mx-4 hover:bg-cyan-500 rounded-3xl">
+                Subscriptions
+              </button>
+        <h2 class=""></h2>
+            </ul>
+          </nav>
+        
+      <div
+        class="max-w-md w-full bg-white my-12 mx-auto p-8 rounded-3xl shadow-[ 0px 2px 28px rgba(0, 0, 0, 0.25)]"
+      >
+        <div
+          class="bg-[#3d5a80] -ml-8 flex justify-start text-2xl w-4/5 rounded-tr-2xl rounded-br-2xl p-2.5 text-white"
+        >
+          Payment
+        </div>
+        <form action="">
+          <div class="flex my-4 gap-x-2.5">
+            <ul class="list-disc bg-[ #3d597f] text-base mr-5">
+              <li>Credit card</li>
+            </ul>
+
+            <img src="img/Visa.png" alt="visa" />
+            <img src="img/MasterCard.png" alt="MasterCard" />
+            <img src="img/American Express (4).png" alt="American Express" />
+          </div>
+          <div class="mb-2.5">
+            <label for="" class="block bg-[ #0d1f3d] "
+              >Card Holder Name</label
+            >
+            <input
+              type="text"
+              class="w-full my-2 text[#0d1f3d] shadow-xl[0px 2px 28px rgba(0, 0, 0, 0.25)] outline-none relative  py-1.5 px-1 rounded-lg border-2 border-[#3d597f] required"
+            />
+          </div>
+          <div class="mb-2.5">
+            <label for="" class="block bg-[ #0d1f3d]">Card Number</label>
+            <img class="absolute ml-80 p-4 h-12 " src="img/Visa.png" alt="" />
+            <input
+              type="number"
+              class="w-full my-2 bg-[ #0d1f3d] shadow-[0px 2px 28px rgba(0, 0, 0, 0.25)]  text-[#0d1f3d] outline-none border-2 border-[#3d597f]  py-1.5 px-1 rounded-lg border-[#3d597f] required"
+            />
+           
+          </div>
+          <div class="flex" >
+            <div>
+              <label for="" >Expiration Date</label>
+              <input
+                type="date"
+                class="w-3/4 p-1 rounded-lg outline-none mb-12 shadow-[0px 2px 28px rgba(0, 0, 0, 0.25)] border-2 border-[#3d597f] my-2"
+              />
+            </div>
+            <div>
+              <label  for="">CVC</label><br />
+              <input
+                type="number"
+                class="w-3/4 p-1 rounded-lg outline-none mb-12 shadow-[0px 2px 28px rgba(0, 0, 0, 0.25)] border-2 border-[#3d597f] my-2"
+              />
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <button
+              type="submit"
+              class="py-1.5 px-1 w-3/5 rounded-lg bg-[#3d5a80] outline-none text-[#ffffff] border-[#3d597f]"
+            >
+              Confirm Payment
+            </button>
+            <button
+              type="submit"
+              class="py-1 px-5 rounded-lg outline-none text-[#3d597f] bg-white border-2 border-[#3d597f]"
+            >
+              Back
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script defer src="script.js"></script>
+  
+</head>
+<body class="bg-cyan-500">
+    <nav class="p-5 bg-cyan-400 shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline"
+              src="img/full-mark 1.png">
+          </span>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+    
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">About Us</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Blog</a>
+          </li>
+          <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+            Subscriptions
+          </button>
+    <h2 class=""></h2>
+        </ul>
+      </nav>
+      <div class="text-center">
+        <h3 class="text-5xl text-white" >Subcription Levels</h3>
+        <p class="text-sm text-white">Here are our 4 subcription levels</p>
+
+      </div>
+      <div class="flex justify-center flex-wrap my-3 mx-0 gap-y-28 gap-x-8">
+          <div class="py-12 w-56 my-2 bg-white before:content-[counter-increment number]">
+            <h4 class="card-heading">Students</h4>
+            <ol type="I">
+              <li>Has access to all case laws and lesgislations.</li>
+              <li>Cannot download</li>
+              <li>Username cannot be used by more than one person at a time</li>
+            </ol>
+            
+              <h1>#1,500</h1>
+              <p class="card-time">monthly</p>
+  
+          </div>
+          <div>
+            <h4 class="card-heading">Lawyer Basics</h4>
+            <ol type="I">
+              <li>Has access to all case laws and lesgislations.</li>
+              <li>Can only download 3 materials in a month</li>
+              <li>
+                Username can be used by 3 persons at a time
+              </li>
+            </ol>
+            
+              <h1>#2,500</h1>
+              <p class="card-time">monthly</p>
+  
+
+          </div>
+          <div>
+            <h4 class="card-heading">Lawyer Advanced</h4>
+            <ol type="I">
+              <li>Has access to all case laws and lesgislations.</li>
+              <li>Can only download 3 materials in a month</li>
+              <li>
+                Username can be used by 5 persons at a time
+              </li>
+            </ol>
+              <h1>#5000</h1>
+              <p class="card-time">monthly</p>
+        
+            
+  
+          </div>
+          <div>
+            <h4 class="card-heading">Institutional</h4>
+            <ol type="I">
+              <li>Has access to all case laws and lesgislations.</li>
+              <li>Unlimited downloads</li>
+              <li>
+                Username can be used by 10 persons at a time
+              </li>
+            </ol>
+              <p class="card-times">Contact us for a quotation</p>
+  
+          </div>
+
+
+      </div>
+    
+</body>
+</html>
