@@ -1,0 +1,137 @@
+<html lang="en"  class="text-xs box-border">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+</head>
+<body class="bg-[#ffffff]">
+    <div class="">
+        <nav class="p-5 bg-[#3d5a80]  md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+              <span class="text-2xl font-[Poppins] cursor-pointer">
+                <img class="h-10 inline"
+                  src="img/full-mark 1.png">
+                
+              </span>
+        
+              <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+        
+            <ul class="md:flex md:items-center bg-[#3d5a80] z-[-1] md:z-auto md:static absolute text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            
+              <button class="bg-[#3d5a80] text-white font-[Poppins] duration-500 px-6 text-xl py-1.5 mx-4 hover:bg-cyan-500 rounded-3xl border-2 border[#ffffff]">
+                Create A Folder
+              </button>
+              <button class="bg-[#3d5a80] text-white font-[Poppins] duration-500 px-6 text-xl py-1.5 mx-4 hover:bg-cyan-500 rounded-3xl  border-2 border[#ffffff]">
+                Add A Question
+              </button>
+
+        <h2 class=""></h2>
+            </ul>
+          </nav>
+          <main>
+              <div class="w-3/5 my-5 mx-auto justify-center text-center">
+                  <div class="relative mb-8" >
+                      <img src="img/full-mark 1@2x.png" class="block mx-auto h-10 mb-2" alt="Ivylogo ">
+                      <span class="text-3xl text-white cursor-pointer ">
+                        <ion-icon name="search" class="absolute text-[#3D5A80] text-center align-center h-10 ml-2" ></ion-icon>
+                      </span>
+                      
+                      <input  type="text" placeholder="Search" class="px-12  p-1  text-2xl shadow-md  outline-[#3D5A80] border-2 border-[rgba(0, 0, 0, 0.25)]  rounded-full text-start text-[#3D5A80] ">
+                    
+        
+                  </div>
+                  <section>
+                  <div>
+                      <div class="mb-4" > 
+                          <h4 class="px-12 py-2 bg-[#3D5A80] w-fit text-2xl text-white text-center mx-auto font-semibold rounded-lg" >Knowledge Base</h4>
+                      </div>
+                      <div class="mx-auto w-fit bg-[#3d5a80] px-12 py-4 rounded-lg text-white mb-0.5">
+                          <h4 class="text-2xl font-semibold">Cases: By court or by year:</h4>
+                          <p>Find cases using year and law filters. e.g Supreme Court-2017</p>
+                      </div>
+                      
+                      <div class="mx-auto w-fit bg-[#3d5a80] px-14 py-4 rounded-lg text-white mb-0.5">
+                          <h4 class="text-2xl font-semibold">Cases: By subject matter:</h4>
+                          <p>Find cases using subject matter filters. e.g Action, Labor Law</p>
+                      </div>
+                      <div class="mx-auto w-fit bg-[#3d5a80] px-40 py-4 rounded-lg text-white mb-12">
+                          <h4 class="text-2xl font-semibold">Legislation:</h4>
+                          <p>Acts, Decrees and Instruments</p>
+                    
+                      </div>
+
+
+
+                  </div>
+                  </section>
+
+                  <section>
+                      <div class="mx-auto w-2/3  justify-center ">
+                          <div>
+                              <h4  class="px-12 py-2 bg-[#3D5A80] w-fit text-2xl text-white text-center mx-auto font-semibold rounded-lg mb-4" >Activity</h4>
+                          </div>
+                          <div class=" shadow-xl shadow-[ 0px 5px 19px 0px hsla(0, 0%, 0%, 0.25) ] flex w-fit mx-auto text-left py-4 mb-8">
+                            <div class="mx-4">
+                              <img src="img/Vector (4).png" class="h-10" alt=""> 
+                            </div>
+                            <div class="w-4/5 flex flex-col overflow-y-auto ">
+                              <p class="text-left text-2xl font-semibold"><u class="text-[#3d5a80]">john Doe</u> asked a question:</p>
+                              <p class="text-sm">2hrs, 34 mins ago</p>
+                              <p class="text-xl">how does PRE-SHIPMENT OF EXPORTS for non-oil exports work in Nigeria</p>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="  flex w-4/6 mx-auto text-left py-4 mb-8 shadow-xl shadow-[ 0px 5px 19px 0px hsla(0, 0%, 0%, 0.25) ]">
+                          <div class="mx-4">
+                            <img src="img/Vector (4).png" class="h-10" alt=""> 
+                          </div>
+                          <div class="w-4/5 flex flex-col w-fit overflow-y-auto">
+                            <p class="text-left text-2xl font-semibold"><u class="text-[#3d5a80]">Udochukwu Stan</u> asked a question:</p>
+                            <p class="text-sm">2hrs, 34 mins ago</p>
+                            <p class="text-xl">What is the connection between bill of attainder and ex-post facto legislation</p>
+                          </div>
+
+                        </div>
+
+                        <div class=" shadow-xl shadow-[ 0px 5px 19px 0px hsla(0, 0%, 0%, 0.25) ] flex w-4/6 mx-auto text-left py-4 mb-8">
+                          <div class="mx-4">
+                            <img src="img/Vector (6).png" class="h-10" alt=""> 
+                          </div>
+                          <div class="w-4/5 flex flex-col w-fit overflow-y-auto">
+                            <p class="text-left text-2xl font-semibold"><u class="text-[#3d5a80]">Daniel Afolabi</u> answered a question:</p>
+                            <p class="text-sm">2hrs, 34 mins ago</p>
+                            <h4 class="text-[#3d5a80] text-2xl">What is the connection between bill of attainder and ex-post facto legislation?</h4>
+                            <p class="text-xl"> A bill of attainder is a legislative act which declares individuals guilt of a crime and inflicts punishment on individuals often without a trial. An ex post facto law is a law that acts retroactively or after the fact to criminalise an act that was legal at the time it was committed. The two are not mutually exclusive, however, 
+                              there is not necessarily any connection between the two.</p>
+                          </div>
+
+                        </div>
+
+
+
+                          
+                      </div>
+                  </section>
+
+                
+              </div>
+          </main>
+
+</body>
+</html>
